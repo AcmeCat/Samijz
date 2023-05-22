@@ -40,6 +40,8 @@ struct CustomiseView: View {
                 Text("**Protein:** \(protein) grams")
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(sandwich.name)
     }
 }
 
