@@ -2,7 +2,7 @@
     "sections": [
         {
             "id": "b277bd27-0865-4434-9e08-16815faa337e",
-            "name": "Toasties",
+            "name": "Toastie Sangas",
             "sandwiches": [
                 {
                     "id": "4035b2b4-b440-4a88-8229-7d8d710f5ae5",
@@ -11,7 +11,7 @@
                 },
                 {
                     "id": "9b5770e2-eec2-4460-8bad-12f673d8373e",
-                    "name": "Grilled Forest Fruits",
+                    "name": "Forest Fruits Preserve",
                     "calories": 750
                 },
                 {
@@ -20,47 +20,25 @@
                     "calories": 650
                 },
                 {
-                    "id": "564246c1-b8e0-4271-8841-ed50333cb96c",
-                    "name": "Vegan Quesadilla",
-                    "calories": 750
+                    "id": "b6f0369d-d5f1-4511-b610-7c9544d93fa3",
+                    "name": "Vegan Tuna",
+                    "calories": 800
                 },
                 {
-                    "id": "b6f0369d-d5f1-4511-b610-7c9544d93fa3",
-                    "name": "Vegan Tuna Melt",
-                    "calories": 800
-                }
-            ]
-        },
-        {
-            "id": "f37be322-2d62-4158-b8c9-c47fa328a49c",
-            "name": "Fresh",
-            "sandwiches": [
-                {
                     "id": "6ae57a14-2c7c-4105-9e23-25b4802f95ac",
-                    "name": "Crispy Tofu Salad",
+                    "name": "Crispy Tofu",
                     "calories": 650
                 },
                 {
                     "id": "84dd653c-09d8-44d5-a811-1ff60a9b9363",
-                    "name": "Falafel Wrap",
+                    "name": "Falafel",
                     "calories": 800
                 },
                 {
                     "id": "e0f40139-9027-41ea-9a92-ca44ab81f3c8",
-                    "name": "Vegan Egg Salad",
+                    "name": "Vegan Egg",
                     "calories": 750
                 },
-                {
-                    "id": "84330134-7088-4822-a4f4-469b269b0f3f",
-                    "name": "Vegan Tuna Salad",
-                    "calories": 750
-                }
-            ]
-        },
-        {
-            "id": "da9c3e46-c7e1-4491-acf4-ec8e370e1e1a",
-            "name": "Burgers",
-            "sandwiches": [
                 {
                     "id": "ff8dcd16-fdb4-4de6-8908-614ae3e27611",
                     "name": "Black Bean Burger",
@@ -68,84 +46,61 @@
                 },
                 {
                     "id": "32039112-93e8-4d2e-8139-158edacab3df",
-                    "name": "Mushroom Burger",
+                    "name": "Grilled Mushroom",
                     "calories": 650
                 },
                 {
-                    "id": "79525794-01e7-431d-9b93-437fdb23a112",
-                    "name": "Tofu Vegie Burger",
-                    "calories": 800
+                    "id": "ac1e2757-f614-4774-b2b6-187920ab6113",
+                    "name": "Sweet Potato",
+                    "calories": 650
                 },
                 {
-                    "id": "418f1a2c-1e9d-464e-af4a-a398f38efa41",
-                    "name": "Vegan BM",
-                    "calories": 750
+                    "id": "4a4773c1-d8b8-4aa6-beb7-c10e1d1caa05",
+                    "name": "Bubble N Squeak",
+                    "calories": 800
                 }
             ]
         },
         {
             "id": "9eb2d962-f671-4953-af6e-937d72748d54",
-            "name": "New1",
+            "name": "Drinks",
             "sandwiches": [
                 {
-                    "id": "ac1e2757-f614-4774-b2b6-187920ab6113",
-                    "name": "Sanga1",
+                    "id": "44d30874-95a4-4c79-93bc-39a4c05c1c93",
+                    "name": "Other Sodas",
                     "calories": 650
                 },
                 {
-                    "id": "4a4773c1-d8b8-4aa6-beb7-c10e1d1caa05",
-                    "name": "Sanga2",
+                    "id": "e898a3b2-fa8e-43b2-b072-4460f6c02957",
+                    "name": "Probiotic Sodas",
                     "calories": 800
+                },
+                {
+                    "id": "6d46b78e-b56e-473a-ad77-6141d4f5dcab",
+                    "name": "Coconut Water",
+                    "calories": 750
                 }
             ]
         },
         {
             "id": "66a272cf-06e6-4c78-8b19-39441577e777",
-            "name": "New2",
+            "name": "Treats",
             "sandwiches": [
                 {
                     "id": "b4870764-2313-4baf-8216-db830ac38416",
-                    "name": "Sanga3",
+                    "name": "Chippies",
                     "calories": 650
                 },
                 {
                     "id": "27712f29-da98-456e-a2ab-8c76b257f8da",
-                    "name": "Sanga4",
+                    "name": "Cookie",
                     "calories": 800
                 },
                 {
                     "id": "f1d7c180-38e4-480a-a136-6197fd9b80aa",
-                    "name": "Sanga5",
+                    "name": "Hand Pie",
                     "calories": 750
                 }
-            ]
-        },
-        {
-            "id": "9ad38968-e7b6-48e5-9324-3253f210e24c",
-            "name": "New3",
-            "sandwiches": [
-                {
-                    "id": "44d30874-95a4-4c79-93bc-39a4c05c1c93",
-                    "name": "Sanga6",
-                    "calories": 650
-                },
-                {
-                    "id": "e898a3b2-fa8e-43b2-b072-4460f6c02957",
-                    "name": "Sanga7",
-                    "calories": 800
-                },
-                {
-                    "id": "6d46b78e-b56e-473a-ad77-6141d4f5dcab",
-                    "name": "Sanga8",
-                    "calories": 750
-                }
-            ]
-        },
-        {
-            "id": "edb626e7-9332-4e76-90bb-41311c709274",
-            "name": "New4",
-            "sandwiches": [
-                
             ]
         }
     ]
