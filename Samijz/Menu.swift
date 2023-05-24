@@ -9,6 +9,7 @@ import Foundation
 
 class Menu: ObservableObject, Codable {
     let sections: [MenuSection]
+    var sauceOptions = [CustomOption.none]
     
     init() {
         do {
@@ -16,6 +17,8 @@ class Menu: ObservableObject, Codable {
             let data = try Data(contentsOf: url)
             let menuData = try JSONDecoder().decode(Menu.self, from: data)
             sections = menuData.sections
+            
+            sauceOptions.append(contentsOf: menuData.sauceOptions)
         } catch {
             fatalError("menu.json is missing or corrupt.")
         }

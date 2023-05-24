@@ -20,16 +20,16 @@ struct MenuView: View {
                 LazyVGrid(columns: columns, pinnedViews: .sectionHeaders) {
                     ForEach(menu.sections) { section in
                         Section {
-                            ForEach(section.sandwiches) { sandwich in
+                            ForEach(section.items) { item in
                                 NavigationLink {
-                                    CustomiseView(sandwich: sandwich)
+                                    CustomiseView(item: item)
                                 } label: {
                                     VStack {
-                                        Image(sandwich.image)
+                                        Image(item.image)
                                             .resizable()
                                             .scaledToFit()
                                             .cornerRadius(10)
-                                        Text(sandwich.name)
+                                        Text(item.name)
                                             .font(.system(.body,
                                                           design: .serif))
                                     }
@@ -51,7 +51,7 @@ struct MenuView: View {
                 }
                 .padding(.horizontal)
             }
-            .navigationTitle("Add Sandwich")
+            .navigationTitle("Add Item")
         }
     }
 }

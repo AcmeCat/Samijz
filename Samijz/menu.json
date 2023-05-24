@@ -2,61 +2,138 @@
     "sections": [
         {
             "id": "b277bd27-0865-4434-9e08-16815faa337e",
-            "name": "Toastie Sangas",
-            "sandwiches": [
+            "name": "Sangas",
+            "items": [
                 {
                     "id": "4035b2b4-b440-4a88-8229-7d8d710f5ae5",
                     "name": "Grilled Avocado",
+                    "sangaOptions": true,
+                    "saltOptions": false,
+                    "sauceOptions": true,
+                    "shoogOptions": false,
+                    "drinkOptions": false,
+                    "pieOptions": false,
+                    "cookieOptions": false,
                     "calories": 800
                 },
                 {
                     "id": "9b5770e2-eec2-4460-8bad-12f673d8373e",
                     "name": "Forest Fruits Preserve",
+                    "sangaOptions": true,
+                    "saltOptions": false,
+                    "sauceOptions": false,
+                    "shoogOptions": true,
+                    "drinkOptions": false,
+                    "pieOptions": false,
+                    "cookieOptions": false,
                     "calories": 750
                 },
                 {
                     "id": "291ddb38-edc0-414d-9158-c2689b6d672f",
                     "name": "Mac N Sheeze",
+                    "sangaOptions": true,
+                    "saltOptions": false,
+                    "sauceOptions": true,
+                    "shoogOptions": false,
+                    "drinkOptions": false,
+                    "pieOptions": false,
+                    "cookieOptions": false,
                     "calories": 650
                 },
                 {
                     "id": "b6f0369d-d5f1-4511-b610-7c9544d93fa3",
                     "name": "Vegan Tuna",
+                    "sangaOptions": true,
+                    "saltOptions": false,
+                    "sauceOptions": true,
+                    "shoogOptions": false,
+                    "drinkOptions": false,
+                    "pieOptions": false,
+                    "cookieOptions": false,
                     "calories": 800
                 },
                 {
                     "id": "6ae57a14-2c7c-4105-9e23-25b4802f95ac",
                     "name": "Crispy Tofu",
+                    "sangaOptions": true,
+                    "saltOptions": false,
+                    "sauceOptions": true,
+                    "shoogOptions": false,
+                    "drinkOptions": false,
+                    "pieOptions": false,
+                    "cookieOptions": false,
                     "calories": 650
                 },
                 {
                     "id": "84dd653c-09d8-44d5-a811-1ff60a9b9363",
                     "name": "Falafel",
+                    "sangaOptions": true,
+                    "saltOptions": false,
+                    "sauceOptions": true,
+                    "shoogOptions": false,
+                    "drinkOptions": false,
+                    "pieOptions": false,
+                    "cookieOptions": false,
                     "calories": 800
                 },
                 {
                     "id": "e0f40139-9027-41ea-9a92-ca44ab81f3c8",
                     "name": "Vegan Egg",
+                    "sangaOptions": true,
+                    "saltOptions": false,
+                    "sauceOptions": true,
+                    "shoogOptions": false,
+                    "drinkOptions": false,
+                    "pieOptions": false,
+                    "cookieOptions": false,
                     "calories": 750
                 },
                 {
                     "id": "ff8dcd16-fdb4-4de6-8908-614ae3e27611",
-                    "name": "Black Bean Burger",
+                    "name": "Black Bean Pattie",
+                    "sangaOptions": true,
+                    "saltOptions": false,
+                    "sauceOptions": true,
+                    "shoogOptions": false,
+                    "drinkOptions": false,
+                    "pieOptions": false,
+                    "cookieOptions": false,
                     "calories": 650
                 },
                 {
                     "id": "32039112-93e8-4d2e-8139-158edacab3df",
                     "name": "Grilled Mushroom",
+                    "sangaOptions": true,
+                    "saltOptions": false,
+                    "sauceOptions": true,
+                    "shoogOptions": false,
+                    "drinkOptions": false,
+                    "pieOptions": false,
+                    "cookieOptions": false,
                     "calories": 650
                 },
                 {
                     "id": "ac1e2757-f614-4774-b2b6-187920ab6113",
                     "name": "Sweet Potato",
+                    "sangaOptions": true,
+                    "saltOptions": false,
+                    "sauceOptions": true,
+                    "shoogOptions": false,
+                    "drinkOptions": false,
+                    "pieOptions": false,
+                    "cookieOptions": false,
                     "calories": 650
                 },
                 {
                     "id": "4a4773c1-d8b8-4aa6-beb7-c10e1d1caa05",
                     "name": "Bubble N Squeak",
+                    "sangaOptions": true,
+                    "saltOptions": false,
+                    "sauceOptions": true,
+                    "shoogOptions": false,
+                    "drinkOptions": false,
+                    "pieOptions": false,
+                    "cookieOptions": false,
                     "calories": 800
                 }
             ]
@@ -64,44 +141,128 @@
         {
             "id": "9eb2d962-f671-4953-af6e-937d72748d54",
             "name": "Drinks",
-            "sandwiches": [
+            "items": [
                 {
                     "id": "44d30874-95a4-4c79-93bc-39a4c05c1c93",
                     "name": "Other Sodas",
-                    "calories": 650
+                    "sangaOptions": false,
+                    "saltOptions": false,
+                    "sauceOptions": false,
+                    "shoogOptions": false,
+                    "drinkOptions": true,
+                    "pieOptions": false,
+                    "cookieOptions": false,
+                    "calories": 350
                 },
                 {
                     "id": "e898a3b2-fa8e-43b2-b072-4460f6c02957",
                     "name": "Probiotic Sodas",
-                    "calories": 800
+                    "sangaOptions": false,
+                    "saltOptions": false,
+                    "sauceOptions": false,
+                    "shoogOptions": false,
+                    "drinkOptions": true,
+                    "pieOptions": false,
+                    "cookieOptions": false,
+                    "calories": 15
                 },
                 {
                     "id": "6d46b78e-b56e-473a-ad77-6141d4f5dcab",
                     "name": "Coconut Water",
-                    "calories": 750
+                    "sangaOptions": false,
+                    "saltOptions": false,
+                    "sauceOptions": false,
+                    "shoogOptions": false,
+                    "drinkOptions": true,
+                    "pieOptions": false,
+                    "cookieOptions": false,
+                    "calories": 200
                 }
             ]
         },
         {
             "id": "66a272cf-06e6-4c78-8b19-39441577e777",
             "name": "Treats",
-            "sandwiches": [
+            "items": [
                 {
                     "id": "b4870764-2313-4baf-8216-db830ac38416",
                     "name": "Chippies",
-                    "calories": 650
+                    "sangaOptions": false,
+                    "saltOptions": true,
+                    "sauceOptions": true,
+                    "shoogOptions": false,
+                    "drinkOptions": false,
+                    "pieOptions": false,
+                    "cookieOptions": false,
+                    "calories": 450
                 },
                 {
                     "id": "27712f29-da98-456e-a2ab-8c76b257f8da",
                     "name": "Cookie",
-                    "calories": 800
+                    "sangaOptions": false,
+                    "saltOptions": false,
+                    "sauceOptions": false,
+                    "shoogOptions": true,
+                    "drinkOptions": false,
+                    "pieOptions": false,
+                    "cookieOptions": true,
+                    "calories": 400
                 },
                 {
                     "id": "f1d7c180-38e4-480a-a136-6197fd9b80aa",
                     "name": "Hand Pie",
-                    "calories": 750
+                    "sangaOptions": false,
+                    "saltOptions": false,
+                    "sauceOptions": false,
+                    "shoogOptions": false,
+                    "drinkOptions": false,
+                    "pieOptions": true,
+                    "cookieOptions": false,
+                    "calories": 450
                 }
             ]
+        } 
+    ],
+    "sauceOptions": [
+        {
+            "id": "0BA44330-9F7B-4B0F-8AEF-B7FD5C21BCD0",
+            "name": "Hollandaise",
+            "calories": 100
+        },
+        {
+            "id": "178DA10C-6DBF-4303-B177-E9A1F0DF780F",
+            "name": "T-Sauce",
+            "calories": 100
+        },
+        {
+            "id": "817DA8CC-58FD-4F31-A119-9F9C79B3D87B",
+            "name": "BBQ",
+            "calories": 100
+        },
+        {
+            "id": "03EDB3E8-276A-4858-A736-39AA2B2ED318",
+            "name": "Bechamel",
+            "calories": 100
+        },
+        {
+            "id": "780C3A2E-6629-43E6-B1CE-CA3CF75C6B9E",
+            "name": "Chutney",
+            "calories": 100
+        },
+        {
+            "id": "4B7303AA-72D0-49E8-8180-846ED162B965",
+            "name": "Aioli",
+            "calories": 100
+        },
+        {
+            "id": "0F181716-A754-4CD6-B606-559378EF128A",
+            "name": "Tonkatsu",
+            "calories": 100
+        },
+        {
+            "id": "D9A324F9-ACE2-49A6-9897-C7939AE9B674",
+            "name": "Satay",
+            "calories": 100
         }
     ]
 }

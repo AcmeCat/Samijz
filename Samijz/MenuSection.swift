@@ -10,5 +10,5 @@ import Foundation
 struct MenuSection: Identifiable, Codable {
     let id: UUID
     let name: String
-    let sandwiches: [Sandwich]
+    let items: [Item]
 }

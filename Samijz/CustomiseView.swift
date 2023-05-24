@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct CustomiseView: View {
-    let sandwich: Sandwich
+    let item: Item
+    
+    @EnvironmentObject var menu: Menu
     
     @State private var bread = 0
     @State private var isToasted = true
@@ -16,6 +18,7 @@ struct CustomiseView: View {
     @State private var hasCrust = true
     @State private var cuts = 0
     @State private var sheeze = 0
+    @State private var sauce = CustomOption.none
     
     let breadOptions = ["White", "Whole", "Grainy", "Gluten-free"]
     
@@ -29,42 +32,54 @@ struct CustomiseView: View {
     
     var body: some View {
         Form {
-            Section("Bread Options") {
-                Picker("Bread", selection: $bread) {
-                    ForEach(breadOptions.indices, id: \.self) { index in
-                        Text(breadOptions[index])
+            if item.sangaOptions {
+                Section("Bread Options") {
+                    Picker("Bread", selection: $bread) {
+                        ForEach(breadOptions.indices, id: \.self) { index in
+                            Text(breadOptions[index])
+                        }
                     }
-                }
-                .pickerStyle(.segmented)
-                Toggle("Toasted", isOn: $isToasted)
-                Picker("Cuts", selection: $cuts) {
-                    ForEach(cutOptions.indices, id: \.self) { index in
-                        Text(cutOptions[index])
+                    .pickerStyle(.segmented)
+                    Toggle("Toasted", isOn: $isToasted)
+                    Picker("Cuts", selection: $cuts) {
+                        ForEach(cutOptions.indices, id: \.self) { index in
+                            Text(cutOptions[index])
+                        }
                     }
+                    .pickerStyle(.segmented)
+                    Toggle("Crusts", isOn: $hasCrust)
                 }
-                .pickerStyle(.segmented)
-                Toggle("Crusts", isOn: $hasCrust)
+                Section("Sheeze Options") {
+                    Picker("Sheeze", selection: $sheeze) {
+                        ForEach(sheezeOptions.indices, id: \.self) { index in
+                            Text(sheezeOptions[index])
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                    Toggle("Extra Sheeze", isOn: $extraSheeze)
+                }
             }
-            Section("Sheeze Options") {
-                Picker("Sheeze", selection: $sheeze) {
-                    ForEach(sheezeOptions.indices, id: \.self) { index in
-                        Text(sheezeOptions[index])
+            if item.sauceOptions {
+                Section("Sauce Options"){
+                    Picker("Sauce", selection: $sauce) {
+                        ForEach(menu.sauceOptions) { option in
+                            Text(option.name)
+                                .tag(option)
+                        }
                     }
                 }
-                .pickerStyle(.segmented)
-                Toggle("Extra Sheeze", isOn: $extraSheeze)
             }
             Section ("Estimates") {
                 Text("**Calories:** \(calories) kcal")
             }
         }
         .navigationBarTitleDisplayMode(.inline)
-        .navigationTitle(sandwich.name)
+        .navigationTitle(item.name)
     }
 }
 
 struct CustomiseView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomiseView(sandwich: Sandwich.example)
+        CustomiseView(item: Item.example)
     }
 }
