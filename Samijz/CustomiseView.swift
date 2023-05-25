@@ -81,5 +81,6 @@ struct CustomiseView: View {
 struct CustomiseView_Previews: PreviewProvider {
     static var previews: some View {
         CustomiseView(item: Item.example)
+            .environmentObject(Menu())
     }
 }
