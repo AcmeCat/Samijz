@@ -10,6 +10,10 @@ import Foundation
 class Menu: ObservableObject, Codable {
     let sections: [MenuSection]
     var sauceOptions = [CustomOption.none]
+    var shoogOptions = [CustomOption.none]
+    var saltOptions = [CustomOption.none]
+    var pieOptions = [CustomOption.none]
+    var cookieOptions = [CustomOption.none]
     
     init() {
         do {
@@ -19,6 +23,10 @@ class Menu: ObservableObject, Codable {
             sections = menuData.sections
             
             sauceOptions.append(contentsOf: menuData.sauceOptions)
+            shoogOptions.append(contentsOf: menuData.shoogOptions)
+            saltOptions.append(contentsOf: menuData.saltOptions)
+            pieOptions.append(contentsOf: menuData.pieOptions)
+            cookieOptions.append(contentsOf: menuData.cookieOptions)
         } catch {
             fatalError("menu.json is missing or corrupt.")
         }

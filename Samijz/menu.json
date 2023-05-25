@@ -269,5 +269,98 @@
             "name": "Pesto",
             "calories": 100
         }
+    ],
+    "shoogOptions": [
+        {
+            "id": "C28BB042-C56C-4200-9A78-32B10BA49305",
+            "name": "Powdered",
+            "calories": 100
+        },
+        {
+            "id": "68EB246F-6D08-4034-B01E-8A7B886DD1E4",
+            "name": "Cinnamon",
+            "calories": 100
+        },
+        {
+            "id": "6AF4CB5B-C57D-4CC9-8AF2-0DE951F054DC",
+            "name": "Vanilla",
+            "calories": 100
+        },
+        {
+            "id": "2125A0C0-4F56-470D-ABA3-E29FE3DBA8E1",
+            "name": "Cardamon",
+            "calories": 100
+        }
+    ],
+    "saltOptions": [
+        {
+            "id": "4D45E53C-A51D-4BD9-85BA-09506C0E4806",
+            "name": "Chilli",
+            "calories": 100
+        },
+        {
+            "id": "5747D80E-CC88-4443-A9B4-4D391A218172",
+            "name": "Garlic",
+            "calories": 100
+        },
+        {
+            "id": "EA1E3A68-A301-4D21-8C00-AC6139BD41C2",
+            "name": "Chicky",
+            "calories": 100
+        },
+        {
+            "id": "27BD4448-D881-4F59-8958-1C9CDB8E9C26",
+            "name": "Truffle",
+            "calories": 100
+        }
+    ],
+    "pieOptions": [
+        {
+            "id": "5D006B1F-8C3D-41EA-86A3-BD6188CFB2EE",
+            "name": "Strawb Custard",
+            "calories": 100
+        },
+        {
+            "id": "9F66F410-F291-43F4-91B5-E7603C94DEED",
+            "name": "Smores",
+            "calories": 100
+        },
+        {
+            "id": "6A8F912B-4A4F-4BE8-80A3-95A41513EFD5",
+            "name": "Burnt Fig",
+            "calories": 100
+        },
+        {
+            "id": "8AAED80E-A5B1-4C61-A946-36AD51DC3170",
+            "name": "Apple Custard",
+            "calories": 100
+        },
+        {
+            "id": "E69F3335-2539-4095-9B66-3C1853E7B2F2",
+            "name": "Peach Custard",
+            "calories": 100
+        }
+    ],
+    "cookieOptions": [
+        {
+            "id": "DD445AD5-6007-4925-88ED-E2B94127245C",
+            "name": "Jam Drop Oat",
+            "calories": 100
+        },
+        {
+            "id": "67ADA551-E7AD-450B-8C8F-6EB6D9197EE3",
+            "name": "Orange Shortbread",
+            "calories": 100
+        },
+        {
+            "id": "0DC70D4F-BB18-4CF0-97C5-51E7F649F884",
+            "name": "PB Browny",
+            "calories": 100
+        },
+        {
+            "id": "67D1FFEF-0CDC-4A1F-9574-2274733B8102",
+            "name": "Salted Chock Chip",
+            "calories": 100
+        }
     ]
 }

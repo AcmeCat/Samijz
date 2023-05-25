@@ -19,6 +19,11 @@ struct CustomiseView: View {
     @State private var cuts = 0
     @State private var sheeze = 0
     @State private var sauce = CustomOption.none
+    @State private var shoog = CustomOption.none
+    @State private var salt = CustomOption.none
+    @State private var cooler = false
+    @State private var pie = CustomOption.none
+    @State private var cookie = CustomOption.none
     
     let breadOptions = ["White", "Whole", "Grainy", "Gluten-free"]
     
@@ -69,8 +74,56 @@ struct CustomiseView: View {
                     }
                 }
             }
+            if item.shoogOptions {
+                Section("Shoog Options"){
+                    Picker("Shoog", selection: $shoog) {
+                        ForEach(menu.shoogOptions) { option in
+                            Text(option.name)
+                                .tag(option)
+                        }
+                    }
+                }
+            }
+            if item.saltOptions {
+                Section("Salt Options"){
+                    Picker("Salt", selection: $salt) {
+                        ForEach(menu.saltOptions) { option in
+                            Text(option.name)
+                                .tag(option)
+                        }
+                    }
+                }
+            }
+            if item.drinkOptions {
+                Section("Drink Options"){
+                    Toggle("Party Clothes", isOn: $cooler)
+                }
+            }
+            if item.pieOptions {
+                Section("Pie Options"){
+                    Picker("Pie", selection: $pie) {
+                        ForEach(menu.pieOptions) { option in
+                            Text(option.name)
+                                .tag(option)
+                        }
+                    }
+                }
+            }
+            if item.cookieOptions {
+                Section("Cookie Options"){
+                    Picker("Cookie", selection: $cookie) {
+                        ForEach(menu.cookieOptions) { option in
+                            Text(option.name)
+                                .tag(option)
+                        }
+                    }
+                }
+            }
             Section ("Estimates") {
                 Text("**Calories:** \(calories) kcal")
+            }
+            Button("Confirm") {
+                print("confirm")
             }
         }
         .navigationBarTitleDisplayMode(.inline)
