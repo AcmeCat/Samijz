@@ -51,7 +51,6 @@ struct CustomiseView: View {
                             Text(cutOptions[index])
                         }
                     }
-                    .pickerStyle(.segmented)
                     Toggle("Crusts", isOn: $hasCrust)
                 }
                 Section("Sheeze Options") {
@@ -60,7 +59,6 @@ struct CustomiseView: View {
                             Text(sheezeOptions[index])
                         }
                     }
-                    .pickerStyle(.segmented)
                     Toggle("Extra Sheeze", isOn: $extraSheeze)
                 }
             }
