@@ -35,6 +35,10 @@ struct CustomiseView: View {
         100
     }
     
+    var cost: Int {
+        item.cost + (extraSheeze ? 2 : 0) + (cooler ? 3 : 0)
+    }
+    
     var body: some View {
         Form {
             if item.sangaOptions {
@@ -119,6 +123,7 @@ struct CustomiseView: View {
             }
             Section ("Estimates") {
                 Text("**Calories:** \(calories) kcal")
+                Text("**Cost:** $\(cost)")
             }
             Button("Confirm") {
                 print("confirm")

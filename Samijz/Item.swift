@@ -17,10 +17,11 @@ struct Item: Identifiable, Codable {
     let drinkOptions: Bool
     let pieOptions: Bool
     let cookieOptions: Bool
+    let cost: Int
     
     var image: String {
         name.lowercased().replacingOccurrences(of: " ", with: "-")
     }
     
-    static let example = Item(id: UUID(), name: "Example Item", sangaOptions: true, saltOptions: true, sauceOptions: true, shoogOptions: true, drinkOptions: true, pieOptions: true, cookieOptions: true)
+    static let example = Item(id: UUID(), name: "Example Item", sangaOptions: true, saltOptions: true, sauceOptions: true, shoogOptions: true, drinkOptions: true, pieOptions: true, cookieOptions: true, cost: 10)
 }
