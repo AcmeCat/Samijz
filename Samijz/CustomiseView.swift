@@ -32,7 +32,11 @@ struct CustomiseView: View {
     let sheezeOptions = ["None (Heretic)", "Sharp", "Tasty", "Melty", "House Mix"]
     
     var calories: Int {
-        100
+        item.calories
+            + ((sheezeOptions[sheeze] != "None (Heretic)" ? 113 : 0)
+               * (extraSheeze ? 2 : 1))
+        + (sauce != CustomOption.none ? 80 : 0)
+        + (shoog != CustomOption.none ? 135 : 0)
     }
     
     var cost: Int {
