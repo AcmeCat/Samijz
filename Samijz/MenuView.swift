@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MenuView: View {
     @EnvironmentObject var menu: Menu
+    @Environment(\.dismiss) var dismiss //dismiss action passed to customise view below
+    @State private var searchText = ""
     
     let columns = [
         GridItem(.adaptive(minimum: 150))
@@ -20,9 +22,11 @@ struct MenuView: View {
                 LazyVGrid(columns: columns, pinnedViews: .sectionHeaders) {
                     ForEach(menu.sections) { section in
                         Section {
-                            ForEach(section.items) { item in
+                            ForEach(section.matches(for: searchText)) { item in
                                 NavigationLink {
-                                    CustomiseView(item: item)
+                                    CustomiseView(item: item) {
+                                        dismiss() //dismiss action passed to customised view so that both can be closed and user returns to content view
+                                    }
                                 } label: {
                                     VStack {
                                         Image(item.image)
@@ -52,6 +56,7 @@ struct MenuView: View {
                 .padding(.horizontal)
             }
             .navigationTitle("Add Item")
+            .searchable(text: $searchText)
         }
     }
 }

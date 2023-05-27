@@ -9,10 +9,10 @@ import SwiftUI
 
 struct CustomiseView: View {
     let item: Item
+    let dismiss: () -> Void //passed in from menu view
     
     @EnvironmentObject var menu: Menu
     @EnvironmentObject var order: Order
-
     
     @State private var bread = 0
     @State private var isToasted = true
@@ -137,6 +137,7 @@ struct CustomiseView: View {
         .toolbar {
             Button("Add To Order") {
                 order.add(item, bread: breadOptions[bread], cut: cutOptions[cuts], toasted: isToasted, crusts: hasCrust, sheeze: sheezeOptions[sheeze], extraSheeze: extraSheeze, sauce: sauce, shoog: shoog, salt: salt, pie: pie, cookie: cookie, cooler: cooler, calories: calories, cost: cost)
+                dismiss() // calls dismiss on menu view (see above, and menu view dec)
             }
         }
     }
@@ -144,7 +145,7 @@ struct CustomiseView: View {
 
 struct CustomiseView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomiseView(item: Item.example)
+        CustomiseView(item: Item.example) {}
             .environmentObject(Menu())
     }
 }
