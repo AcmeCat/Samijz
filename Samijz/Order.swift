@@ -29,6 +29,10 @@ class Order: ObservableObject {
         }
     }
     
+    var currentTotal: Int {
+        servings.reduce(0) { $0 + $1.cost }
+    }
+    
     //revise this after you modify the data model
     func add(_ item: Item, bread: String, cut: String, toasted: Bool, crusts: Bool, sheeze: String, extraSheeze: Bool, sauce: CustomOption,
              shoog: CustomOption, salt: CustomOption, pie: CustomOption, cookie: CustomOption, cooler: Bool, calories: Int, cost: Int) {

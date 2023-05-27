@@ -15,26 +15,37 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                if order.servings.isEmpty {
-                    Button("Add your first item") {
-                        showingAddScreen = true
-                    }
-                } else {
-                    ForEach(order.servings) {serving in
-                        HStack {
-                            VStack(alignment: .leading) {
-                                Text(serving.name)
-                                    .font(.headline)
-                                Text(serving.description)
-                                    .font(.caption)
+            VStack {
+                List {
+                    if order.servings.isEmpty {
+                        Button("Add your first item") {
+                            showingAddScreen = true
+                        }
+                    } else {
+                        ForEach(order.servings) {serving in
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text(serving.name)
+                                        .font(.headline)
+                                    Text(serving.description)
+                                        .font(.caption)
+                                }
+                                
+                                Spacer()
+                                
+                                Text("\(serving.calories) kCal")
                             }
-                            
-                            Spacer()
-                            
-                            Text("\(serving.calories) kCal")
                         }
                     }
+                }
+                if !order.servings.isEmpty {
+                    Button ("Place Order (Total: $\(order.currentTotal))") {
+                        print("Order Placed")
+                        order.servings = []
+                        order.save()
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .padding()
                 }
             }
             .sheet(isPresented: $showingAddScreen, content: MenuView.init)
