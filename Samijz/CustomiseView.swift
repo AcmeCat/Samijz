@@ -11,6 +11,8 @@ struct CustomiseView: View {
     let item: Item
     
     @EnvironmentObject var menu: Menu
+    @EnvironmentObject var order: Order
+
     
     @State private var bread = 0
     @State private var isToasted = true
@@ -129,12 +131,14 @@ struct CustomiseView: View {
                 Text("**Calories:** \(calories) kcal")
                 Text("**Cost:** $\(cost)")
             }
-            Button("Confirm") {
-                print("confirm")
-            }
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle(item.name)
+        .toolbar {
+            Button("Add To Order") {
+                order.add(item, bread: breadOptions[bread], cut: cutOptions[cuts], toasted: isToasted, crusts: hasCrust, sheeze: sheezeOptions[sheeze], extraSheeze: extraSheeze, sauce: sauce, shoog: shoog, salt: salt, pie: pie, cookie: cookie, cooler: cooler, calories: calories, cost: cost)
+            }
+        }
     }
 }
 
