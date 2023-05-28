@@ -40,7 +40,7 @@ class Order: ObservableObject {
         if item.sangaOptions {
             description.append("\(cut != "Uncut" ? !toasted ? "O" : "Toasted, o" : !toasted ? "Uncut, o" : "Toasted, uncut, o")n \(bread.lowercased()) bread")
             if (sheeze != "None (Heretic)") { description.append("with \(extraSheeze ? "extra " : "")\(sheeze.lowercased()) sheeze")}
-            if (shoog != CustomOption.none) { description.append("with \(shoog.name) shoog")}
+            if (shoog != CustomOption.none) { description.append("with \(shoog.name.lowercased()) shoog")}
             description.append("and \(sauce == CustomOption.none ? "no" : sauce.name.lowercased()) sauce")
             if (cut != "Uncut") {description.append("cut into \(cut.lowercased())")}
             if !crusts { description.append("and no crusts") }
