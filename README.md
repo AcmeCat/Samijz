@@ -8,4 +8,4 @@ Order totals are updated each time a new menu item is added.
 
 ## Screen Captures
 
-
+https://github.com/AcmeCat/Samijz/blob/main/caps/seq1.PNG
