@@ -1,4 +1,4 @@
-# Samijz
+# Samijz ![A D6 Roll](/Dice/Assets.xcassets/Caps/IMG_1100.imageset/IMG_1100.jpeg)
 
 ## A mobile application for a vegan grilled sandwich shop
 The mobile application allows users to select and customise menu items before adding them to an order. 
