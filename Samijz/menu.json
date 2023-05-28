@@ -230,7 +230,7 @@
                     "sangaOptions": false,
                     "saltOptions": false,
                     "sauceOptions": false,
-                    "shoogOptions": false,
+                    "shoogOptions": true,
                     "drinkOptions": false,
                     "pieOptions": true,
                     "cookieOptions": false,
@@ -248,7 +248,7 @@
         },
         {
             "id": "178DA10C-6DBF-4303-B177-E9A1F0DF780F",
-            "name": "T-Sauce",
+            "name": "Tomato",
             "calories": 100
         },
         {
