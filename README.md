@@ -8,4 +8,10 @@ Order totals are updated each time a new menu item is added.
 
 ## Screen Captures
 
-https://github.com/AcmeCat/Samijz/blob/main/caps/seq1.PNG
+| ![Initial View](/caps/seq1.PNG) | ![Menu View](/caps/seq2.PNG) | ![Search Menu Items](/caps/seq3.PNG) |
+| --------- | ---------- | ---------- |
+| Initial View | Menu View | Search Menu Items |
+
+| ![Customise View](/caps/seq4.PNG) | ![Select Sauce](/caps/seq5.PNG) | ![Order Updates](/caps/seq6.PNG) |
+| --------- | ---------- | ---------- |
+| Customise View | Select Sauce | Order Updates |
