@@ -38,6 +38,117 @@ A vibrant, mobile-first iOS app built for a fictional vegan grilled sandwich sho
 | CoreData | Persistence Framework |
 | XCTest | Unit testing for ViewModels and logic |
 
+## Architecture
+The app follows the MVVM (Model–View–ViewModel) architecture pattern, ensuring testability and separation of concerns.
+```
+Samijz
+├── Models
+│   └── MenuItem, Ingredient, OrderItem (Codable)
+├── ViewModels
+│   ├── MenuViewModel
+│   └── OrderViewModel
+├── Views
+│   ├── MenuListView
+│   ├── MenuItemDetailView
+│   ├── CustomisationView
+│   └── OrderSummaryView
+├── Services
+│   └── MenuDataProvider.swift
+├── Persistence
+│   └── OrderStore.swift
+└── Tests
+    └── GrillaTests.swift
+```
+**Class Diagram**
+```
+┌────────────────────────────┐
+│ MenuItem                   │
+├────────────────────────────┤
+│ +name                      │
+│ +basePrice                 │
+│ +baseCal                   │
+│ +ingredients: [Ingredient] │
+└────┬───────────────────────┘
+     │
+     │ has
+     ▼
+┌──────────────┐
+│ Ingredient   │
+├──────────────┤
+│ +name        │
+│ +price       │
+│ +calories    │
+│ +isOptional  │
+└──────────────┘
+
+┌────────────────────────────────────┐
+│ OrderItem                          │
+├────────────────────────────────────┤
+│ +menuItem                          │
+│ +selectedIngredients: [Ingredient] │
+│ +totalPrice                        │
+│ +totalCal                          │
+└────┬───────────────────────────────┘
+     │ wraps
+     ▼
+
+┌─────────────────────┐
+│   Order             │
+├─────────────────────┤
+│ +items: [OrderItem] │
+│ +totalPrice         │
+│ +totalCal           │
+└─────────────────────┘
+
+┌───────────────────────┐         ┌────────────────────┐
+│  MenuViewModel        │         │  OrderViewModel    │
+├───────────────────────┤         ├────────────────────┤
+│ +menuItems: [MenuItem]│         │ +order: Order      │
+│ +search()             │         │ +addItem()         │
+└─────────┬─────────────┘         └─────────┬──────────┘
+          │                                 │ persists
+          ▼                                 ▼
+                                 ┌────────────────────┐
+                                 │    OrderStore      │
+                                 ├────────────────────┤
+                                 │ +save(order)       │
+                                 │ +load()            │
+                                 └────────────────────┘
+```
+## Navigation
+```
+Start
+  │
+  ▼
+┌────────────────────┐
+│ MenuListView       │
+│ - List of items    │
+│ - Search bar       │
+└────────┬───────────┘
+         │ tap item
+         ▼
+┌──────────────────────────┐
+│ MenuItemDetailView       │
+│ - Shows description      │
+│ - Button: "Customize"    │
+└────────┬─────────────────┘
+         │ tap customize
+         ▼
+┌──────────────────────────┐
+│ CustomisationView        │
+│ - Ingredient selection   │
+│ - Real-time cost + cals  │
+│ - Add to order button    │
+└────────┬─────────────────┘
+         │ added to order
+         ▼
+┌──────────────────────────┐
+│ OrderSummaryView         │
+│ - List of order items    │
+│ - Totals (calories/cost) │
+│ - Place order button     │
+└──────────────────────────┘
+```
 ## Screen Captures
 
 | ![Initial View](/caps/seq1.PNG) | ![Menu View](/caps/seq2.PNG) | ![Search Menu Items](/caps/seq3.PNG) |
@@ -47,3 +158,9 @@ A vibrant, mobile-first iOS app built for a fictional vegan grilled sandwich sho
 | ![Customise View](/caps/seq4.PNG) | ![Select Sauce](/caps/seq5.PNG) | ![Order Updates](/caps/seq6.PNG) |
 | --------- | ---------- | ---------- |
 | Customise View | Select Sauce | Order Updates |
+
+## Future Enhancements
+- [ ] CloudKit support for syncing orders across devices
+- [ ] Order history and re-ordering
+- [ ] Admin backend for managing the menu
+- [ ] User login for favourites and nutrition tracking
