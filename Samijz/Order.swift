@@ -6,7 +6,7 @@
 
 import Foundation
 
-class Order: ObservableObject {
+public class Order: ObservableObject {
     @Published var servings: [Serving]
     let savePath = FileManager.docmentsDirectory.appendingPathComponent("SavedOrder")
     

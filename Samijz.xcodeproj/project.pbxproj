@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,7 +22,22 @@
 		613BDE2A2A21B20F00F375A1 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613BDE292A21B20F00F375A1 /* FileManager-DocumentsDirectory.swift */; };
 		613BDE2C2A21B29800F375A1 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613BDE2B2A21B29800F375A1 /* Order.swift */; };
 		613BDE352A24DB0700F375A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613BDE342A24DB0700F375A1 /* Constants.swift */; };
+		618C2C272E0E693200C522FF /* Serving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613BDE272A21B0F700F375A1 /* Serving.swift */; };
+		618C2C282E0E694A00C522FF /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613BDE292A21B20F00F375A1 /* FileManager-DocumentsDirectory.swift */; };
+		618C2C292E0E695200C522FF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613BDE192A1A240F00F375A1 /* Item.swift */; };
+		618C2C2A2E0E695A00C522FF /* CustomOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613BDE252A1DF45600F375A1 /* CustomOption.swift */; };
+		61DFC5122E0E62D1004D4905 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613BDE2B2A21B29800F375A1 /* Order.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61DFC50D2E0E6277004D4905 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 613BDDFB2A1A197D00F375A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 613BDE022A1A197D00F375A1;
+			remoteInfo = Samijz;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		613BDE032A1A197D00F375A1 /* Samijz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Samijz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,10 +56,22 @@
 		613BDE292A21B20F00F375A1 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 		613BDE2B2A21B29800F375A1 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		613BDE342A24DB0700F375A1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		61DFC5092E0E6277004D4905 /* SamijzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamijzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		61DFC50A2E0E6277004D4905 /* SamijzTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SamijzTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		613BDE002A1A197D00F375A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61DFC5062E0E6277004D4905 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				613BDE052A1A197D00F375A1 /* Samijz */,
+				61DFC50A2E0E6277004D4905 /* SamijzTests */,
 				613BDE042A1A197D00F375A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				613BDE032A1A197D00F375A1 /* Samijz.app */,
+				61DFC5092E0E6277004D4905 /* SamijzTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +157,29 @@
 			productReference = 613BDE032A1A197D00F375A1 /* Samijz.app */;
 			productType = "com.apple.product-type.application";
 		};
+		61DFC5082E0E6277004D4905 /* SamijzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61DFC50F2E0E6277004D4905 /* Build configuration list for PBXNativeTarget "SamijzTests" */;
+			buildPhases = (
+				61DFC5052E0E6277004D4905 /* Sources */,
+				61DFC5062E0E6277004D4905 /* Frameworks */,
+				61DFC5072E0E6277004D4905 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61DFC50E2E0E6277004D4905 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				61DFC50A2E0E6277004D4905 /* SamijzTests */,
+			);
+			name = SamijzTests;
+			packageProductDependencies = (
+			);
+			productName = SamijzTests;
+			productReference = 61DFC5092E0E6277004D4905 /* SamijzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -135,11 +187,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					613BDE022A1A197D00F375A1 = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					61DFC5082E0E6277004D4905 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 613BDE022A1A197D00F375A1;
 					};
 				};
 			};
@@ -157,6 +213,7 @@
 			projectRoot = "";
 			targets = (
 				613BDE022A1A197D00F375A1 /* Samijz */,
+				61DFC5082E0E6277004D4905 /* SamijzTests */,
 			);
 		};
 /* End PBXProject section */
@@ -169,6 +226,13 @@
 				613BDE202A1A5A2900F375A1 /* menu.json in Resources */,
 				613BDE0E2A1A197E00F375A1 /* Preview Assets.xcassets in Resources */,
 				613BDE0B2A1A197E00F375A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61DFC5072E0E6277004D4905 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +258,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		61DFC5052E0E6277004D4905 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61DFC5122E0E62D1004D4905 /* Order.swift in Sources */,
+				618C2C282E0E694A00C522FF /* FileManager-DocumentsDirectory.swift in Sources */,
+				618C2C272E0E693200C522FF /* Serving.swift in Sources */,
+				618C2C2A2E0E695A00C522FF /* CustomOption.swift in Sources */,
+				618C2C292E0E695200C522FF /* Item.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61DFC50E2E0E6277004D4905 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 613BDE022A1A197D00F375A1 /* Samijz */;
+			targetProxy = 61DFC50D2E0E6277004D4905 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		613BDE142A1A197E00F375A1 /* Debug */ = {
@@ -231,6 +315,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = C256H3ZXQ8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -291,6 +376,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C256H3ZXQ8;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -319,7 +405,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Samijz/Preview Content\"";
-				DEVELOPMENT_TEAM = C256H3ZXQ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -348,7 +433,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Samijz/Preview Content\"";
-				DEVELOPMENT_TEAM = C256H3ZXQ8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -369,6 +453,51 @@
 			};
 			name = Release;
 		};
+		61DFC5102E0E6277004D4905 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apidae.SamijzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Samijz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Samijz";
+			};
+			name = Debug;
+		};
+		61DFC5112E0E6277004D4905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apidae.SamijzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Samijz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Samijz";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -386,6 +515,15 @@
 			buildConfigurations = (
 				613BDE172A1A197E00F375A1 /* Debug */,
 				613BDE182A1A197E00F375A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61DFC50F2E0E6277004D4905 /* Build configuration list for PBXNativeTarget "SamijzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61DFC5102E0E6277004D4905 /* Debug */,
+				61DFC5112E0E6277004D4905 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
