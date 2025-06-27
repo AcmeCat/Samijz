@@ -6,17 +6,19 @@
 
 import Foundation
 
+protocol OrderStorage {
+    func loadOrder() -> [Serving]
+    func saveOrder(_ order: [Serving])
+}
+
 public class Order: ObservableObject {
     @Published var servings: [Serving]
+    private let storage: OrderStorage
     let savePath = FileManager.docmentsDirectory.appendingPathComponent("SavedOrder")
     
-    init() {
-        do {
-            let data = try Data(contentsOf: savePath)
-            servings = try JSONDecoder().decode([Serving].self, from: data)
-        } catch {
-            servings = []
-        }
+    init(storage: OrderStorage) {
+        self.storage = storage
+        servings = storage.loadOrder()
     }
     
     func save() {
