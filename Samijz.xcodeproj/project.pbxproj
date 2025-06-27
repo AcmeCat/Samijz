@@ -26,6 +26,7 @@
 		618C2C282E0E694A00C522FF /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613BDE292A21B20F00F375A1 /* FileManager-DocumentsDirectory.swift */; };
 		618C2C292E0E695200C522FF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613BDE192A1A240F00F375A1 /* Item.swift */; };
 		618C2C2A2E0E695A00C522FF /* CustomOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613BDE252A1DF45600F375A1 /* CustomOption.swift */; };
+		618C2C2C2E0E731900C522FF /* FileOrderStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C2C2B2E0E730600C522FF /* FileOrderStorage.swift */; };
 		61DFC5122E0E62D1004D4905 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613BDE2B2A21B29800F375A1 /* Order.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		613BDE292A21B20F00F375A1 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 		613BDE2B2A21B29800F375A1 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		613BDE342A24DB0700F375A1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		618C2C2B2E0E730600C522FF /* FileOrderStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOrderStorage.swift; sourceTree = "<group>"; };
 		61DFC5092E0E6277004D4905 /* SamijzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamijzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 		613BDE052A1A197D00F375A1 /* Samijz */ = {
 			isa = PBXGroup;
 			children = (
+				618C2C2B2E0E730600C522FF /* FileOrderStorage.swift */,
 				613BDE252A1DF45600F375A1 /* CustomOption.swift */,
 				613BDE1F2A1A5A2900F375A1 /* menu.json */,
 				613BDE062A1A197D00F375A1 /* SamijzApp.swift */,
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				613BDE1E2A1A4EDF00F375A1 /* Menu.swift in Sources */,
+				618C2C2C2E0E731900C522FF /* FileOrderStorage.swift in Sources */,
 				613BDE262A1DF45600F375A1 /* CustomOption.swift in Sources */,
 				613BDE222A1B4B2300F375A1 /* MenuView.swift in Sources */,
 				613BDE1A2A1A240F00F375A1 /* Item.swift in Sources */,

@@ -14,7 +14,6 @@ protocol OrderStorage {
 public class Order: ObservableObject {
     @Published var servings: [Serving]
     private let storage: OrderStorage
-    let savePath = FileManager.docmentsDirectory.appendingPathComponent("SavedOrder")
     
     init(storage: OrderStorage) {
         self.storage = storage
@@ -22,12 +21,7 @@ public class Order: ObservableObject {
     }
     
     func save() {
-        do {
-            let data = try JSONEncoder().encode(servings)
-            try data.write(to: savePath, options: [.atomic, .completeFileProtection])
-        } catch {
-            print("Unable to save data")
-        }
+        storage.saveOrder(servings)
     }
     
     var currentTotal: Int {

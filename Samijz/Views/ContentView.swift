@@ -8,16 +8,6 @@
 import SwiftUI
 import CoreData
 
-class FileOrderStorage: OrderStorage {
-    func saveOrder(_ order: [Serving]) {
-        
-    }
-    
-    func loadOrder() -> [Serving] {
-        return []
-    }
-}
-
 struct ContentView: View {
     @StateObject var menu = Menu()
     @StateObject var order = Order(storage: FileOrderStorage())
