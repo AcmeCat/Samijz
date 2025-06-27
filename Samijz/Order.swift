@@ -3,7 +3,6 @@
 //  Samijz
 //
 //  Created by Rory Allen on 27/5/2023.
-//  Adapted from Paul Hudson's video at https://www.youtube.com/watch?v=tSwDfV6D_70
 
 import Foundation
 
@@ -12,7 +11,7 @@ class Order: ObservableObject {
     let savePath = FileManager.docmentsDirectory.appendingPathComponent("SavedOrder")
     
     init() {
-        do { //load data from docuemnts path
+        do {
             let data = try Data(contentsOf: savePath)
             servings = try JSONDecoder().decode([Serving].self, from: data)
         } catch {

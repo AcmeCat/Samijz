@@ -8,7 +8,7 @@
 import Foundation
 
 struct Serving: Identifiable, Codable {
-    var id: UUID //allows reorder of item
+    var id: UUID
     let name: String
     let description: String
     let calories: Int
