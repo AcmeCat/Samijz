@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MenuView: View {
     @EnvironmentObject var menu: Menu
-    @Environment(\.dismiss) var dismiss //dismiss action passed to customise view below
+    @Environment(\.dismiss) var dismiss
     @State private var searchText = ""
     
     let columns = [
@@ -25,7 +25,7 @@ struct MenuView: View {
                             ForEach(section.matches(for: searchText)) { item in
                                 NavigationLink {
                                     CustomiseView(item: item) {
-                                        dismiss() //dismiss action passed to customised view so that both can be closed and user returns to content view
+                                        dismiss()
                                     }
                                 } label: {
                                     VStack {
@@ -49,7 +49,6 @@ struct MenuView: View {
                                        alignment: .leading)
                                 .padding([.top, .bottom, .trailing], 5)
                                 .background(.background)
-                            
                         }
                     }
                 }

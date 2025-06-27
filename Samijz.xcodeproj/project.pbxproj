@@ -76,12 +76,10 @@
 				613BDE252A1DF45600F375A1 /* CustomOption.swift */,
 				613BDE1F2A1A5A2900F375A1 /* menu.json */,
 				613BDE062A1A197D00F375A1 /* SamijzApp.swift */,
-				613BDE232A1BB09200F375A1 /* CustomiseView.swift */,
+				61DFC5042E0E5E9E004D4905 /* Views */,
 				613BDE272A21B0F700F375A1 /* Serving.swift */,
 				613BDE292A21B20F00F375A1 /* FileManager-DocumentsDirectory.swift */,
 				613BDE2B2A21B29800F375A1 /* Order.swift */,
-				613BDE082A1A197D00F375A1 /* ContentView.swift */,
-				613BDE212A1B4B2300F375A1 /* MenuView.swift */,
 				613BDE0A2A1A197E00F375A1 /* Assets.xcassets */,
 				613BDE192A1A240F00F375A1 /* Item.swift */,
 				613BDE0C2A1A197E00F375A1 /* Preview Content */,
@@ -98,6 +96,16 @@
 				613BDE0D2A1A197E00F375A1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		61DFC5042E0E5E9E004D4905 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				613BDE232A1BB09200F375A1 /* CustomiseView.swift */,
+				613BDE082A1A197D00F375A1 /* ContentView.swift */,
+				613BDE212A1B4B2300F375A1 /* MenuView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
