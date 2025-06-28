@@ -136,7 +136,7 @@ struct CustomiseView: View {
         .navigationTitle(item.name)
         .toolbar {
             Button("Add To Order") {
-                order.add(item, bread: breadOptions[bread], cut: cutOptions[cuts], toasted: isToasted, crusts: hasCrust, sheeze: sheezeOptions[sheeze], extraSheeze: extraSheeze, sauce: sauce, shoog: shoog, salt: salt, pie: pie, cookie: cookie, cooler: cooler, calories: calories, cost: cost)
+                order.add(ServingRequest(item: item, bread: breadOptions[bread], cut: cutOptions[cuts], toasted: isToasted, crusts: hasCrust, sheeze: sheezeOptions[sheeze], extraSheeze: extraSheeze, sauce: sauce, shoog: shoog, salt: salt, pie: pie, cookie: cookie, cooler: cooler, calories: calories, cost: cost))
                 dismiss() // calls dismiss on menu view (see above, and menu view dec)
             }
         }

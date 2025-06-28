@@ -6,38 +6,26 @@
 //
 
 struct DescriptionBuilder {
-    static func describe(item: Item,
-                         bread: String,
-                         cut: String,
-                         toasted: Bool,
-                         crusts: Bool,
-                         sheeze: String,
-                         extraSheeze: Bool,
-                         sauce: CustomOption,
-                         shoog: CustomOption,
-                         salt: CustomOption,
-                         pie: CustomOption,
-                         cookie: CustomOption,
-                         cooler: Bool) -> String {
-        if item.sangaOptions {
+    static func describe(_ request: ServingRequest) -> String {
+        if request.item.sangaOptions {
             return buildSangaDescription(
-                bread: bread,
-                cut: cut,
-                isToasted: toasted,
-                hasCrusts: crusts,
-                sheeze: sheeze,
-                hasExtraSheeze: extraSheeze,
-                sauce: sauce,
-                shoog: shoog
+                bread: request.bread,
+                cut: request.cut,
+                isToasted: request.toasted,
+                hasCrusts: request.crusts,
+                sheeze: request.sheeze,
+                hasExtraSheeze: request.extraSheeze,
+                sauce: request.sauce,
+                shoog: request.shoog
             )
-        } else if item.drinkOptions {
-            return buildDrinkDescription(hasCooler: cooler)
-        } else if item.saltOptions {
-            return buildSaltyDescription(salt: salt, sauce: sauce)
-        } else if item.pieOptions {
-            return buildPieDescription(pie: pie, itemName: item.name, shoog: shoog)
-        } else if item.cookieOptions {
-            return buildCookieDescription(cookie: cookie, itemName: item.name, shoog: shoog)
+        } else if request.item.drinkOptions {
+            return buildDrinkDescription(hasCooler: request.cooler)
+        } else if request.item.saltOptions {
+            return buildSaltyDescription(salt: request.salt, sauce: request.sauce)
+        } else if request.item.pieOptions {
+            return buildPieDescription(pie: request.pie, itemName: request.item.name, shoog: request.shoog)
+        } else if request.item.cookieOptions {
+            return buildCookieDescription(cookie: request.cookie, itemName: request.item.name, shoog: request.shoog)
         } else {
             return ""
         }

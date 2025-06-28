@@ -28,11 +28,8 @@ public class Order: ObservableObject {
         servings.reduce(0) { $0 + $1.cost }
     }
     
-    //TODO: revise this after you modify the data model
-    func add(_ item: Item, bread: String, cut: String, toasted: Bool, crusts: Bool, sheeze: String, extraSheeze: Bool, sauce: CustomOption,
-             shoog: CustomOption, salt: CustomOption, pie: CustomOption, cookie: CustomOption, cooler: Bool, calories: Int, cost: Int) {
-        let description = DescriptionBuilder.describe(item: item, bread: bread, cut: cut, toasted: toasted, crusts: crusts, sheeze: sheeze, extraSheeze: extraSheeze, sauce: sauce, shoog: shoog, salt: salt, pie: pie, cookie: cookie, cooler: cooler)
-        let serving = Serving(id: UUID(), name: item.name, description: description, calories: calories, cost: cost)
+    func add(_ request: ServingRequest) {
+        let serving = ServingFactory.make(from: request)
         servings.insert(serving, at: 0)
         save()
     }
