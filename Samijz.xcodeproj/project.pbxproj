@@ -118,6 +118,7 @@
 				618C2C2D2E0E90C800C522FF /* Helpers */,
 				618C2C2F2E0E90EA00C522FF /* ViewModels */,
 				613BDE0C2A1A197E00F375A1 /* Preview Content */,
+				618C2C452E0FCDFB00C522FF /* Factories */,
 			);
 			path = Samijz;
 			sourceTree = "<group>";
@@ -142,7 +143,6 @@
 		618C2C2E2E0E90DC00C522FF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				618C2C402E0FBFF900C522FF /* ServingFactory.swift */,
 				618C2C3D2E0FBF2600C522FF /* ServingRequest.swift */,
 				613BDE272A21B0F700F375A1 /* Serving.swift */,
 				613BDE192A1A240F00F375A1 /* Item.swift */,
@@ -176,6 +176,14 @@
 				613BDE1F2A1A5A2900F375A1 /* menu.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		618C2C452E0FCDFB00C522FF /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				618C2C402E0FBFF900C522FF /* ServingFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		61DFC5042E0E5E9E004D4905 /* Views */ = {
