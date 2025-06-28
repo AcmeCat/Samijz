@@ -32,7 +32,7 @@ public class Order: ObservableObject {
     func add(_ item: Item, bread: String, cut: String, toasted: Bool, crusts: Bool, sheeze: String, extraSheeze: Bool, sauce: CustomOption,
              shoog: CustomOption, salt: CustomOption, pie: CustomOption, cookie: CustomOption, cooler: Bool, calories: Int, cost: Int) {
         let description = DescriptionBuilder.describe(item: item, bread: bread, cut: cut, toasted: toasted, crusts: crusts, sheeze: sheeze, extraSheeze: extraSheeze, sauce: sauce, shoog: shoog, salt: salt, pie: pie, cookie: cookie, cooler: cooler)
-        let serving = Serving(id: UUID(), name: item.name, description: descriptionString, calories: calories, cost: cost)
+        let serving = Serving(id: UUID(), name: item.name, description: description, calories: calories, cost: cost)
         servings.insert(serving, at: 0)
         save()
     }
